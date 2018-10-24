@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Js Event binding</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <button @click="increaseFont">Click Me to increase Font size</button>
+      <button @click="decreaseFont">Click Me to decrease Font size</button>
+      <h1 :style="{fontSize: fontSize + 'px'}">{{name}}</h1>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>

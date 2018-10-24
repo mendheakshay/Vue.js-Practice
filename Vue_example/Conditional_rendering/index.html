@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Js conditional rendering</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1 v-if="isActive">{{name}} is Active</h1>
+      <h1 v-if="isNotActive">{{name}} is not Active</h1>
+      <h1 v-else>NO USER</h1>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>

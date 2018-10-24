@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="main">
+    	<h1>Data binding using " : " </h1>
+    	<a :href=url>{{url}}</a>
+    	<h1 :data=dynamicId>{{dynamicId}}</h1>
+
+    	<h1>Data binding using " v-bind " </h1>
+    	<a v-bind:href=url>{{url}}</a>
+    	<h1 v-bind:data=dynamicId>{{dynamicId}}</h1>
+
+    	<h1> Two way data binding</h1>
+    	<input type="text" v-model="message">
+    	<div>{{message}}</div>
+
+    	<h1> Two way data binding other example</h1>
+    	<input v-model="options" type="checkbox" id="radioButtons1" value="option-1">I am test checkbox 1
+    	<input v-model="options" type="checkbox" id="radioButtons2" value="option-2">I am test checkbox 2
+    	<input v-model="options" type="checkbox" id="radioButtons3" value="option-3">I am test checkbox 3
+    	<p>You have selected {{options.join(',')}}</p>
+
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>

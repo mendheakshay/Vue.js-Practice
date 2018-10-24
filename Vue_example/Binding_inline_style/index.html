@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Js Directives</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Without style Object</h1>
+      <p :style="{color: 'red', fontSize: fontSize + 'px' }">This is a Test paragraph.</p>
+      <h1>With style Object</h1>
+      <p :style=styleObject>This is a Test paragraph.</p>
+      <p :style="[styleObject, styleObject2]">This is a Test paragraph.</p>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>
